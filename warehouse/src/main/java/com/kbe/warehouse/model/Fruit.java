@@ -1,93 +1,84 @@
 package com.kbe.warehouse.model;
 
+import com.opencsv.bean.CsvBindByPosition;
+
 import javax.persistence.*;
 
 @Entity
-@Table(name = "fruits")
+@Table(name = "Fruit")
 public class Fruit {
 
     @Id
-    @Column(name = "id")
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "Id")
+    private Integer Id;
 
-    @Column(name = "name")
-    private String name;
+    @CsvBindByPosition(position = 0)
+    @Column(name = "Name")
+    private String Name;
 
-    @Column(name = "price")
-    private Double price;
+    @CsvBindByPosition(position = 1)
+    @Column(name = "Price")
+    private Double Price;
 
-    @Column(name = "quantity")
-    private Integer quantity;
+    @CsvBindByPosition(position = 2)
+    @Column(name = "Quantity")
+    private Integer Quantity;
 
-    @Column(name = "description")
-    private String description;
-
-    @Column(name = "availability")
-    private boolean availability;
+    @Column(name = "Availability")
+    @CsvBindByPosition(position = 3)
+    private Boolean Availability;
 
     public Fruit() {
+        super();
     }
 
-    public Fruit(Long id, String name, Double price, Integer quantity, String description, boolean availability) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;;
-        this.description = description;
-        this.availability = availability;
+    public Fruit(String name, Double price, Integer quantity, Boolean availability) {
+        super();
+        Name = name;
+        Price = price;
+        Quantity = quantity;
+        Availability = availability;
     }
 
-    public long getId() {
-        return id;
+    public Integer getId() {
+        return Id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Integer id) {
+        Id = id;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
 
     public Double getPrice() {
-        return price;
+        return Price;
     }
 
     public void setPrice(Double price) {
-        this.price = price;
+        Price = price;
     }
 
     public Integer getQuantity() {
-        return quantity;
+        return Quantity;
     }
 
     public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
+        Quantity = quantity;
     }
 
-    public String getDescription() {
-        return description;
+    public Boolean getAvailability() {
+        return Availability;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setAvailability(Boolean availability) {
+        Availability = availability;
     }
 
-    public boolean isAvailability() {
-        return availability;
-    }
-
-    public void setAvailability(boolean availability) {
-        this.availability = availability;
-    }
-
-    @Override
-    public String toString() {
-        return "Fruit [id=" + id + ", name=" + name + ", price=" + price +", quantity=" + quantity +
-                ", desc=" + description + ", availability=" + availability + "]";
-    }
 }
