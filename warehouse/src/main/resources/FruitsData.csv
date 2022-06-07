@@ -1,4 +1,10 @@
-Strawberry,3.0,10,TRUE
-Berry,4.5,20,FALSE
-Strawberry,3.0,10,TRUE
-Strawberry,3.0,10,TRUE
+Apple,3.00,10,TRUE
+Avocado,4.50,10,FALSE
+Banana,3.99,6,TRUE
+Coconut,2.99,2,FALSE
+Strawberry,1,50,31,TRUE
+Grepefruit,0.99,1,TRUE
+Papaya,3.00,2,FALSE
+Pineapple,1.00,1,TRUE
+Watermelon,2.00,1,TRUE
+Blueberries,2.99,10,FALSE
