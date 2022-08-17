@@ -1,7 +1,7 @@
 package com.kbe.warehouse.config;
 
-import com.kbe.warehouse.model.Fruit;
-import com.kbe.warehouse.repository.FruitRepository;
+import com.kbe.warehouse.model.Player;
+import com.kbe.warehouse.repository.PlayerRepository;
 import com.opencsv.bean.CsvToBeanBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,26 +16,26 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-@Component
-public class LoadCsvData implements ApplicationRunner {
-    FruitRepository fruitRepository;
+
+public class LoadPlayerData implements ApplicationRunner {
+    PlayerRepository playerRepository;
 
     @Autowired
-    public LoadCsvData(FruitRepository fruitRepository) {
+    public LoadPlayerData(PlayerRepository playerRepository) {
         super();
-        this.fruitRepository = fruitRepository;
+        this.playerRepository = playerRepository;
     }
 
-    @Value("FruitsData.csv")
-    private String fruitFile;
+    @Value("PlayersData.csv")
+    private String playerFile;
 
     @Override
     public void run(ApplicationArguments args) throws IOException, URISyntaxException {
-Reader reader = Files.newBufferedReader(Paths.get(ClassLoader.getSystemResource(fruitFile).toURI()));
-        List<Fruit> beans = new CsvToBeanBuilder<Fruit>(reader).withType(Fruit.class)
+        Reader reader = Files.newBufferedReader(Paths.get(ClassLoader.getSystemResource(playerFile).toURI()));
+        List<Player> beans = new CsvToBeanBuilder<Player>(reader).withType(Player.class)
                 .build().parse();
-        for (Fruit fruitDetail : beans) {
-            fruitRepository.save(fruitDetail);
+        for (Player playerDetail : beans) {
+            playerRepository.save(playerDetail);
         }
     }
 }

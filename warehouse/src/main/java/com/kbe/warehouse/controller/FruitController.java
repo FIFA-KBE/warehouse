@@ -16,8 +16,6 @@ public class FruitController {
         super();
         this.fruitService = fruitService;
     }
-
-    // Get All Employees Without Salary
     @GetMapping("/fruits")
     public ResponseEntity<?> allFruits() {
         return ResponseEntity.ok(fruitService.getAllFruits());
