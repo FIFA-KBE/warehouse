@@ -86,4 +86,5 @@ public class Player {
     public Integer getRating() { return Rating; }
 
     public void setRating(Integer rating) { Rating = rating; }
+
 }

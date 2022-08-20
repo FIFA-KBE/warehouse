@@ -1,4 +1,28 @@
-L.Messi,35,ATTACKER,ARG,50.0,93
-C.Ronaldo,37,ATTACKER,POR,30.0,91
-L.Messi,35,ATTACKER,ARG,50.0,93
-C.Ronaldo,37,ATTACKER,POR,30.0,91
+L.Messi,35,Attacker,ARG,50.0,93
+C.Ronaldo,37,Attacker,POR,30.0,91
+R.Lewandowski,33,Attacker,POL,45.0,92
+K.Mbappe,23,Attacker,FRA,160.0,91
+Neymar Jr.,30,Attacker,BRA,75.0,91
+DE Bruyne,31,Midfieler,BEK,85.0,91
+Kante,31,Midfieler,FRA,40.0,88
+Casemiro,30,Midfieler,BRA,40.0,89
+Kimmich,27,Midfieler,GER,80.0,89
+Toni Kroos,32,Midfieler,GER,20.0,88
+Modric,36,Midfieler,CRO,10.0,87
+Bruno Fernandes,27,Midfieler,POR,35.0,87
+Heung Min Son,30,Midfieler,KOR,50.0,87
+Sancho,22,Midfieler,ENG,75.0,87
+Fabinho,28,Midfieler,BRA,60.0,87
+Marquinhos,28,Defender,BRA,70.0,87
+Ruben Dias,25,Defender,POR,75.0,87
+Ramos,36,Defender,ESP,6.0,88
+Varane,29,Defender,FRA,48.0,86
+Van Dijk,31,Defender,NED,55.0,89
+Chiellini,38,Defender,ITA,1.5,86
+Hummels,33,Defender,GER,6.5,86
+Koulibaly,35,Defender,CMR,35.0,86
+Skriniar,27,Defender,SLO,65.0,86
+Trent Arnold,23,Defender,ENG,80.0,87
+Oblak,29,Keeper,SLO,45.0,91
+Ter Stegen,30,Keeper,GER,30.0,90
+Manuel Neuer,36,Keeper,GER,15.0,90
