@@ -1,8 +1,10 @@
 package com.kbe.warehouse.model;
 
+import com.opencsv.bean.CsvBindAndSplitByName;
 import com.opencsv.bean.CsvBindByPosition;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -19,10 +21,10 @@ public class Team {
     private String TeamName;
 
     @CsvBindByPosition(position = 1)
+    @JoinTable(name = "Team_Player", joinColumns = @JoinColumn(name = "Team_Id"), inverseJoinColumns = @JoinColumn(name = "Player_Id"))
     @Column(name = "PlayerList")
     @ManyToMany
-    @JoinTable(name = "Team_Player", joinColumns = @JoinColumn(name = "Team_Id"), inverseJoinColumns = @JoinColumn(name = "Player_Id"))
-    private List<Player> PlayerList;
+    private List<Player> playerList = new ArrayList<>();
     @CsvBindByPosition(position = 2)
     @Column(name = "Owner")
     private String Owner;
@@ -34,7 +36,7 @@ public class Team {
     public Team(String teamName, List<Player> playerList, String owner) {
         super();
         TeamName = teamName;
-        PlayerList = playerList;
+        playerList = playerList;
         Owner = owner;
     }
 
@@ -56,11 +58,11 @@ public class Team {
     }
 
     public List<Player> getPlayerList() {
-        return PlayerList;
+        return playerList;
     }
 
     public void setPlayerList(List<Player> playerList) {
-        PlayerList = playerList;
+        playerList = playerList;
     }
 
     public String getOwner() {
@@ -76,7 +78,7 @@ public class Team {
         return "Team{" +
                 "Id=" + Id +
                 ", TeamName='" + TeamName + '\'' +
-                ", PlayerList=" + PlayerList +
+                ", PlayerList=" + playerList +
                 ", Owner='" + Owner + '\'' +
                 '}';
     }
