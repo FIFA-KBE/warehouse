@@ -18,37 +18,48 @@ public class Player {
     private String Name;
 
     @CsvBindByPosition(position = 1)
+    @Column(name = "firstName")
+    private String FirstName;
+
+    @CsvBindByPosition(position = 2)
     @Column(name = "Age")
     private Integer Age;
 
-    @CsvBindByPosition(position = 2)
+    @CsvBindByPosition(position = 3)
     @Column(name = "Position")
     private String Position;
 
-    @CsvBindByPosition(position = 3)
+    @CsvBindByPosition(position = 4)
     @Column(name = "Nationality")
     private String Nationality;
 
-    @CsvBindByPosition(position = 4)
+    @CsvBindByPosition(position = 5)
     @Column(name = "Cost")
     private Double Cost;
 
-    @CsvBindByPosition(position = 5)
+    @CsvBindByPosition(position = 6)
     @Column(name = "Rating")
     private Integer Rating;
+
+    @CsvBindByPosition(position = 7)
+    @Column(name = "imageURL")
+    private String ImageURL;
 
     public Player() {
         super();
     }
 
-    public Player(String name, Integer age, String position, String nationality, Double cost, Integer rating) {
+    public Player(String name, String firstName, Integer age, String position,
+                  String nationality, Double cost, Integer rating, String imageURL) {
         super();
         Name = name;
+        FirstName = firstName;
         Age = age;
         Position = position;
         Nationality = nationality;
         Cost = cost;
         Rating = rating;
+        ImageURL = imageURL;
     }
 
     public Integer getId() {
@@ -66,6 +77,10 @@ public class Player {
     public void setName(String name) {
         Name = name;
     }
+
+    public String getFirstName() { return FirstName;}
+
+    public void setFirstName(String firstName) { FirstName = firstName; }
 
     public Integer getAge() { return Age; }
 
@@ -86,5 +101,9 @@ public class Player {
     public Integer getRating() { return Rating; }
 
     public void setRating(Integer rating) { Rating = rating; }
+
+    public String getImageURL() { return ImageURL; }
+
+    public void setImageURL(String imageURL) { ImageURL = imageURL; }
 
 }

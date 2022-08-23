@@ -36,11 +36,10 @@ public class Team {
         super();
     }
 
-    public Team(String teamName, List<Player> playerList, Double totalVaule, String owner) {
+    public Team(String teamName, List<Player> playerList, String owner) {
         super();
         TeamName = teamName;
         PlayerList = playerList;
-        TotalVaule = totalVaule;
         Owner = owner;
     }
 
@@ -69,14 +68,6 @@ public class Team {
         PlayerList = playerList;
     }
 
-    public Double getTotalVaule() {
-        return TotalVaule;
-    }
-
-    public void setTotalVaule(Double totalVaule) {
-        TotalVaule = totalVaule;
-    }
-
     public String getOwner() {
         return Owner;
     }
@@ -87,6 +78,12 @@ public class Team {
 
     @Override
     public String toString() {
-        return "Team [Id=" + Id + ", TeamName=" + TeamName + ", PlayerList=" + PlayerList + ", TotalVaule=" + TotalVaule + ", Owner=" + Owner + "]";
+        return "Team{" +
+                "Id=" + Id +
+                ", TeamName='" + TeamName + '\'' +
+                ", PlayerList=" + PlayerList +
+                ", TotalVaule=" + TotalVaule +
+                ", Owner='" + Owner + '\'' +
+                '}';
     }
 }
