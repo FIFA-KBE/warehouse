@@ -23,12 +23,7 @@ public class Team {
     @ManyToMany
     @JoinTable(name = "Team_Player", joinColumns = @JoinColumn(name = "Team_Id"), inverseJoinColumns = @JoinColumn(name = "Player_Id"))
     private List<Player> PlayerList;
-
     @CsvBindByPosition(position = 2)
-    @Column(name = "TotalVaule")
-    private Double TotalVaule;
-
-    @CsvBindByPosition(position = 3)
     @Column(name = "Owner")
     private String Owner;
 
@@ -82,7 +77,6 @@ public class Team {
                 "Id=" + Id +
                 ", TeamName='" + TeamName + '\'' +
                 ", PlayerList=" + PlayerList +
-                ", TotalVaule=" + TotalVaule +
                 ", Owner='" + Owner + '\'' +
                 '}';
     }
