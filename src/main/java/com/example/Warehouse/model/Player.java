@@ -1,10 +1,14 @@
 package com.example.Warehouse.model;
 
 import com.opencsv.bean.CsvBindByPosition;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "Player")
 public class Player {
 
@@ -45,65 +49,11 @@ public class Player {
     @Column(name = "imageURL")
     private String ImageURL;
 
-    public Player() {
-        super();
-    }
+    @CsvBindByPosition(position = 8)
+    @Column(name = "Club")
+    private String Club;
 
-    public Player(String name, String firstName, Integer age, String position,
-                  String nationality, Double cost, Integer rating, String imageURL) {
-        super();
-        Name = name;
-        FirstName = firstName;
-        Age = age;
-        Position = position;
-        Nationality = nationality;
-        Cost = cost;
-        Rating = rating;
-        ImageURL = imageURL;
-    }
-
-    public Integer getId() {
-        return Id;
-    }
-
-    public void setId(Integer id) {
-        Id = id;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public String getFirstName() { return FirstName;}
-
-    public void setFirstName(String firstName) { FirstName = firstName; }
-
-    public Integer getAge() { return Age; }
-
-    public void setAge(Integer age) { Age = age; }
-
-    public String getPosition() { return Position; }
-
-    public void setPosition(String position) { Position = position; }
-
-    public String getNationality() { return Nationality; }
-
-    public void setNationality(String nationality){ Nationality = nationality; }
-
-    public Double getCost() { return Cost; }
-
-    public void setCost(Double cost) { Cost = cost; }
-
-    public Integer getRating() { return Rating; }
-
-    public void setRating(Integer rating) { Rating = rating; }
-
-    public String getImageURL() { return ImageURL; }
-
-    public void setImageURL(String imageURL) { ImageURL = imageURL; }
-
+    @CsvBindByPosition(position = 9)
+    @Column(name = "ClubCountry")
+    private String ClubCountry;
 }

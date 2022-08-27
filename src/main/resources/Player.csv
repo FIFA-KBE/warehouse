@@ -1,28 +1,35 @@
-Messi,Lionel,35,Striker,ARG,50.0,93,https://futhead.cursecdn.com/static/img/22/players/158023.png
-Ronaldo,Cristiano,37,Striker,POR,30.0,91,http
-Lewandowski,Robert,33,Striker,POL,45.0,92,https
-Mbappe,Kylian,23,Striker,FRA,160.0,91,https
-Neymar,Jr,30,Attacker,BRA,75.0,91,https
-De Bruyne,Kevin,31,Midfieler,BEK,85.0,91,ht
-Kante,Ngolo,31,Midfieler,FRA,40.0,88,http
-Casemiro,Carlos,30,Midfieler,BRA,40.0,89,ht
-Kimmich,Joshua,27,Midfieler,GER,80.0,89,http
-Kroos,Toni,32,Midfieler,GER,20.0,88,http
-Modric,Luka,36,Midfieler,CRO,10.0,87,http
-Fernandes,Bruno,27,Midfieler,POR,35.0,87,htt
-Min Son,Heung,30,Midfieler,KOR,50.0,87,ht
-Sancho,Jaden,22,Midfieler,ENG,75.0,87,h
-Fabinho,Fabio,28,Midfieler,BRA,60.0,87,h
-Marquinhos,Marcos,28,Defender,BRA,70.0,87,htt
-Dias,Ruben,25,Defender,POR,75.0,87,htt
-Ramos,Sergio,36,Defender,ESP,6.0,88,ht
-Varane,Raphael,29,Defender,FRA,48.0,86,htt
-Van Dijk,Virgil,31,Defender,NED,55.0,89,ht
-Chiellini,Giorgio,38,Defender,ITA,1.5,86,htt
-Hummels,Mats,33,Defender,GER,6.5,86,htt
-Koulibaly,Kalidou,35,Defender,CMR,35.0,86,htt
-Skriniar,Milan,27,Defender,SLO,65.0,86,hh
-Trent Arnold,Alexander,23,Defender,ENG,80.0,87,htt
-Oblak,Jan,29,Keeper,SLO,45.0,91,http
-Ter Stegen,Andre,30,Keeper,GER,30.0,90,http
-Neuer,Manuel,36,Keeper,GER,15.0,90,h
+Messi,Lionel,35,Striker,ARG,50.0,93,https://futhead.cursecdn.com/static/img/22/players/158023.png,PSG,FRA
+Ronaldo,Cristiano,37,Striker,POR,30.0,91,https://futhead.cursecdn.com/static/img/22/players/158023.png,Manchester United,ENG
+Lewandowski,Robert,33,Striker,POL,45.0,92,https://futhead.cursecdn.com/static/img/22/players/158023.png,Bayern Munich,GER
+Mbappe,Kylian,23,Striker,FRA,160.0,91,https://futhead.cursecdn.com/static/img/22/players/158023.png,PSG,FRA
+Neymar,Jr,30,Striker,BRA,75.0,91,https://futhead.cursecdn.com/static/img/22/players/158023.png,PSG,FRA
+Kane,Harry,29,Striker,ENG,90.0,90,https://futhead.cursecdn.com/static/img/22/players/158023.png,Tottenham,ENG
+Mane,Sadio,30,Striker,SEN,70.0,89,https://futhead.cursecdn.com/static/img/22/players/158023.png,Liverpool,ENG
+Benzema,Karim,34,Striker,FRA,30.0,89,https://futhead.cursecdn.com/static/img/22/players/158023.png,Real Madrid,ESP
+Salah,Mohamed,30,Striker,MAR,90.0,89,https://futhead.cursecdn.com/static/img/22/players/158023.png,Liverpool,ENG
+Haaland,Erling,22,Striker,NOR,150.0,88,https://futhead.cursecdn.com/static/img/22/players/158023.png,Dortmund,GER
+De Bruyne,Kevin,31,Midfieler,BEK,85.0,91,https://futhead.cursecdn.com/static/img/22/players/158023.png,Manchester City,ENG
+Kante,Ngolo,31,Midfieler,FRA,40.0,88,https://futhead.cursecdn.com/static/img/22/players/158023.png,Chelsea,ENG
+Casemiro,Carlos,30,Midfieler,BRA,40.0,89,https://futhead.cursecdn.com/static/img/22/players/158023.png,Real Madrid,ESP
+Kimmich,Joshua,27,Midfieler,GER,80.0,89,https://futhead.cursecdn.com/static/img/22/players/158023.png,Bayern Munich,GER
+Kroos,Toni,32,Midfieler,GER,20.0,88,https://futhead.cursecdn.com/static/img/22/players/158023.png,Real Madrid,ESP
+Modric,Luka,36,Midfieler,CRO,10.0,87,https://futhead.cursecdn.com/static/img/22/players/158023.png,Real Madrid,ESP
+Fernandes,Bruno,27,Midfieler,POR,35.0,87,https://futhead.cursecdn.com/static/img/22/players/158023.png,Manchester United,ENG
+Min Son,Heung,30,Midfieler,KOR,50.0,87,https://futhead.cursecdn.com/static/img/22/players/158023.png,Tottenham,ENG
+Sancho,Jaden,22,Midfieler,ENG,75.0,87,https://futhead.cursecdn.com/static/img/22/players/158023.png,Manchester United,ENG
+Fabinho,Fabio,28,Midfieler,BRA,60.0,87,https://futhead.cursecdn.com/static/img/22/players/158023.png,Manchester City,ENG
+Marquinhos,Marcos,28,Defender,BRA,70.0,87,https://futhead.cursecdn.com/static/img/22/players/158023.png,PSG,FRA
+Dias,Ruben,25,Defender,POR,75.0,87,https://futhead.cursecdn.com/static/img/22/players/158023.png,Manchester City,ENG
+Ramos,Sergio,36,Defender,ESP,6.0,88,https://futhead.cursecdn.com/static/img/22/players/158023.png,PSG,FRA
+Varane,Raphael,29,Defender,FRA,48.0,86,https://futhead.cursecdn.com/static/img/22/players/158023.png,Manchester United,ENG
+Van Dijk,Virgil,31,Defender,NED,55.0,89,https://futhead.cursecdn.com/static/img/22/players/158023.png,Liverpool,ENG
+Chiellini,Giorgio,38,Defender,ITA,1.5,86,https://futhead.cursecdn.com/static/img/22/players/158023.png,Juventus,ITA
+Hummels,Mats,33,Defender,GER,6.5,86,https://futhead.cursecdn.com/static/img/22/players/158023.png,Dortmund,GER
+Koulibaly,Kalidou,35,Defender,CMR,35.0,86,https://futhead.cursecdn.com/static/img/22/players/158023.png,Napoli,ITA
+Skriniar,Milan,27,Defender,SLO,65.0,86,https://futhead.cursecdn.com/static/img/22/players/158023.png,Inter Mailand,ITA
+Trent Arnold,Alexander,23,Defender,ENG,80.0,87,https://futhead.cursecdn.com/static/img/22/players/158023.png,Liverpool,ENG
+Oblak,Jan,29,Keeper,SLO,45.0,91,https://futhead.cursecdn.com/static/img/22/players/158023.png,Athletico Madrid,ESP
+Ter Stegen,Andre,30,Keeper,GER,30.0,90,https://futhead.cursecdn.com/static/img/22/players/158023.png,Barcelona,ESP
+Neuer,Manuel,36,Keeper,GER,15.0,90,https://futhead.cursecdn.com/static/img/22/players/158023.png,Bayern Munich,GER
+Becker,Alisson,29,Keeper,BRA,50.0,89,https://futhead.cursecdn.com/static/img/22/players/158023.png,Liverpool,ENG
+Courtois,Thibaut,30,Keeper,BEL,60.0,89,https://futhead.cursecdn.com/static/img/22/players/158023.png,Real Madrid,ESP
