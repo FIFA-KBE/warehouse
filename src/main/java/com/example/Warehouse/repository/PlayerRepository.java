@@ -9,7 +9,4 @@ import java.util.List;
 public interface PlayerRepository extends JpaRepository<Player, Integer> {
     @Query(value = "SELECT e FROM Player e")
     List<Player> findAllPlayers();
-
-    @Query(value = "SELECT e FROM Player e WHERE e.Name = ?1")
-    Player findPlayerByName(String name);
 }

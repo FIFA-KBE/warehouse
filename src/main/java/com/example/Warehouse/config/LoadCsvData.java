@@ -43,13 +43,13 @@ public class LoadCsvData implements ApplicationRunner {
     }
 
 
-        private void loadPlayers() throws IOException, URISyntaxException {
-            try (Reader reader = Files.newBufferedReader(Paths.get(this.getClass().getClassLoader().getResource(playerFile).toURI()))) {
-                CsvToBeanBuilder<Player> builder = new CsvToBeanBuilder<>(reader);
-                builder.withType(Player.class);
-                List<Player> players = builder.build().parse();
-                playerRepository.saveAll(players);
-            }
+    private void loadPlayers() throws IOException, URISyntaxException {
+        try (Reader reader = Files.newBufferedReader(Paths.get(this.getClass().getClassLoader().getResource(playerFile).toURI()))) {
+            CsvToBeanBuilder<Player> builder = new CsvToBeanBuilder<>(reader);
+            builder.withType(Player.class);
+            List<Player> players = builder.build().parse();
+            playerRepository.saveAll(players);
+        }
     }
 
     private void loadTeams() throws IOException, URISyntaxException {
@@ -59,5 +59,5 @@ public class LoadCsvData implements ApplicationRunner {
             List<Team> teams = builder.build().parse();
             teamRepository.saveAll(teams);
         }
-}
+    }
 }

@@ -19,4 +19,5 @@ public class PlayerServiceImpl implements PlayerService {
     public List<Player> getAllPlayers() {
         return playerRepository.findAllPlayers();
     }
+
 }

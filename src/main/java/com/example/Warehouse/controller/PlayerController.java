@@ -20,4 +20,5 @@ public class PlayerController {
     public ResponseEntity<?> allPlayers() {
         return ResponseEntity.ok(playerService.getAllPlayers());
     }
+
 }

@@ -9,11 +9,11 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "Player")
+@Table(name = "players")
 public class Player {
 
-    @javax.persistence.Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(generator = "increment")
     @Column(name = "Id")
     private Integer Id;
 
