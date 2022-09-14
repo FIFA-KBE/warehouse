@@ -4,7 +4,7 @@ docker-compose up -d
 
 Application will run on:
 
-http://localhost:8080
+http://localhost:9003
 
 Working with MySQL: for configuration of MySQL, please check application.properties file.
 
