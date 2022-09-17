@@ -19,4 +19,4 @@ services:
       - warehousedb
     restart: on-failure
     ports:
-      - 9003:9003
+      - 6003:6003
