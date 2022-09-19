@@ -1,22 +1,35 @@
-version: "3.9"
-services:
-  warehousedb:
-    container_name: warehousedb
-    image: mysql:8
-    restart: always
-    ports:
-      - 3307:3306
-    environment:
-      - MYSQL_ROOT_PASSWORD=furkan10
-      - MYSQL_PASSWORD=ThePassword
-      - MYSQL_USER=springuser
-      - MYSQL_DATABASE=db_example
+version: "3.8"
 
-  warehouse:
-    container_name: warehouse
-    build: .
-    depends_on:
-      - warehousedb
-    restart: on-failure
+services:
+  mysqldb:
+    image: mysql:8
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=db_example
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password
     ports:
-      - 6003:6003
+      - "3307:3306"
+    volumes:
+      - db:/var/lib/mysql
+  app:
+    container_name: Warehouse
+    command: java -jar target/Warehouse-0.0.1-SNAPSHOT.jar
+    depends_on:
+      - mysqldb
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    environment:
+        - spring.datasource.url=jdbc:mysql://mysqldb:3306/db_example
+        - spring.datasource.username=root
+        - spring.datasource.password=password
+
+    ports:
+      - "6003:6003"
+    volumes:
+      - ./:/app/app
+
+volumes:
+  db:
