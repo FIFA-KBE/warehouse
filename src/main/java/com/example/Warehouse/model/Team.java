@@ -19,51 +19,55 @@ public class Team {
     private Integer Id;
 
     @CsvBindByPosition(position = 0)
+    @Column(name = "Owner")
+    private String Owner;
+
+    @CsvBindByPosition(position = 1)
     @Column(name = "TeamName")
     private String TeamName;
 
-    @CsvBindByPosition(position = 1)
-    @Column(name = "PlayerOne")
+    @CsvBindByPosition(position = 2)
+    @Column(name = "playerOne")
     private String playerOne;
 
-    @CsvBindByPosition(position = 2)
-    @Column(name = "PlayerTwo")
+    @CsvBindByPosition(position = 3)
+    @Column(name = "playerTwo")
     private String playerTwo;
 
-    @CsvBindByPosition(position = 3)
-    @Column(name = "PlayerThree")
+    @CsvBindByPosition(position = 4)
+    @Column(name = "playerThree")
     private String playerThree;
 
-    @CsvBindByPosition(position = 4)
-    @Column(name = "PlayerFour")
+    @CsvBindByPosition(position = 5)
+    @Column(name = "playerFour")
     private String playerFour;
 
-    @CsvBindByPosition(position = 5)
-    @Column(name = "PlayerFive")
+    @CsvBindByPosition(position = 6)
+    @Column(name = "playerFive")
     private String playerFive;
 
-    @CsvBindByPosition(position = 6)
-    @Column(name = "PlayerSix")
+    @CsvBindByPosition(position = 7)
+    @Column(name = "playerSix")
     private String playerSix;
 
-    @CsvBindByPosition(position = 7)
-    @Column(name = "PlayerSeven")
+    @CsvBindByPosition(position = 8)
+    @Column(name = "playerSeven")
     private String playerSeven;
 
-    @CsvBindByPosition(position = 8)
-    @Column(name = "PlayerEight")
+    @CsvBindByPosition(position = 9)
+    @Column(name = "playerEight")
     private String playerEight;
 
-    @CsvBindByPosition(position = 9)
-    @Column(name = "PlayerNine")
+    @CsvBindByPosition(position = 10)
+    @Column(name = "playerNine")
     private String playerNine;
 
-    @CsvBindByPosition(position = 10)
-    @Column(name = "PlayerTen")
+    @CsvBindByPosition(position = 11)
+    @Column(name = "playerTen")
     private String playerTen;
 
-    @CsvBindByPosition(position = 11)
-    @Column(name = "PlayerEleven")
+    @CsvBindByPosition(position = 12)
+    @Column(name = "playerEleven")
     private String playerEleven;
 
 }
