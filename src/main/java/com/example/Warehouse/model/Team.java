@@ -70,4 +70,8 @@ public class Team {
     @Column(name = "playerEleven")
     private String playerEleven;
 
+    @CsvBindByPosition(position = 13)
+    @Column(name = "TotalCost")
+    private Double TotalCost;
+
 }
